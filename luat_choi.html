@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luật Chơi Cờ Tướng - Hướng Dẫn Chi Tiết</title>
+    <style>
+        /* --- Thiết lập chung --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdf5e6; /* Màu kem nhạt giống giấy cũ */
+            color: #4b3621; /* Màu nâu đậm */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: #8b4513; /* Màu gỗ */
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: 5px solid #d2691e;
+        }
+
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            text-align: center;
+            font-style: italic;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        /* --- Nội dung chính --- */
+        .section-title {
+            text-align: center;
+            color: #b22222; /* Màu đỏ gạch */
+            border-bottom: 2px solid #b22222;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        .rule-box {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 5px solid #8b4513;
+        }
+
+        .rule-box h3 {
+            margin-top: 0;
+            color: #d35400;
+        }
+
+        /* Danh sách quân cờ */
+        .piece-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .piece-item {
+            background: #fff8dc;
+            padding: 15px;
+            border: 1px solid #deb887;
+            border-radius: 5px;
+        }
+
+        .piece-name {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #b22222;
+        }
+
+        /* Nút quay lại */
+        .btn-back {
+            display: block;
+            width: 200px;
+            margin: 40px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .btn-back:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #4b3621;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Luật Cờ Tướng</h1>
+        <p>Tinh hoa trí tuệ phương Đông</p>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="section-title">1. Bàn Cờ</h2>
+        <div class="rule-box">
+            <p>Bàn cờ tướng là một hình chữ nhật do 9 đường dọc và 10 đường ngang cắt nhau tạo thành 90 điểm giao cắt. Giữa bàn cờ có một khoảng trống gọi là <strong>Sông (Hà)</strong> chia bàn cờ thành hai bên đối xứng.</p>
+            <p>Mỗi bên có một cung Tướng hình vuông (Cửu cung) có hai đường chéo chéo nhau. Tướng và Sĩ không được ra khỏi khu vực này.</p>
+        </div>
+
+        <h2 class="section-title">2. Cách Di Chuyển Các Quân</h2>
+        <div class="piece-list">
+            
+            <div class="piece-item">
+                <span class="piece-name">Tướng (Soái)</span>
+                <p>Đi từng ô một, đi ngang hoặc dọc. Tướng luôn phải ở trong Cửu cung. Hai Tướng không được nhìn thấy mặt nhau trên cùng một cột dọc (lộ mặt tướng).</p>
+            </div>
+
+            <div class="piece-item">
+                <span class="piece-name">Sĩ</span>
+                <p>Đi chéo từng ô một. Luôn phải ở trong Cửu cung. Nhiệm vụ chính là bảo vệ Tướng.</p>
+            </div>
+
+            <div class="piece-item">
+                <span class="piece-name">Tượng</span>
+                <p>Đi chéo 2 ô (ngang 2 và dọc 2). Không được qua sông sang đất đối phương. Nếu có quân chặn ở giữa đường đi thì Tượng không đi được (cản tượng).</p>
+            </div>
+
+            <div class="piece-item">
+                <span class="piece-name">Xe</span>
+                <p>Đi ngang hoặc dọc bao nhiêu ô tùy ý miễn là không có quân cản đường. Đây là quân mạnh nhất bàn cờ.</p>
+            </div>
+
+            <div class="piece-item">
+                <span class="piece-name">Pháo</span>
+                <p>Đi giống Xe. Nhưng khi ăn quân thì phải nhảy qua đúng một quân khác (gọi là ngòi). Nếu không ăn quân thì không được nhảy.</p>
+            </div>
+
+            <div class="piece-item">
+                <span class="piece-name">Mã</span>
+                <p>Đi theo hình chữ L (ngang 1 ô và dọc 2 ô hoặc ngược lại). Nếu có quân nằm ngay bên cạnh đường đi thì Mã bị cản (cản mã).</p>
+            </div>
+
+            <div class="piece-item">
+                <span class="piece-name">Tốt (Chốt)</span>
+                <p>Đi mỗi nước 1 ô. Khi chưa qua sông chỉ được đi thẳng. Khi đã qua sông có thể đi thẳng hoặc đi ngang. Tốt không được đi lùi.</p>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">3. Kết Thúc Ván Đấu</h2>
+        <div class="rule-box">
+            <h3>🔴 Chiếu bí (Hết cờ)</h3>
+            <p>Khi một bên chiếu Tướng và đối phương không còn nước đi nào để đỡ, bên chiếu thắng.</p>
+            
+            <h3>🤝 Cờ hòa</h3>
+            <p>Hai bên không còn khả năng chiếu bí đối phương, hoặc cùng thỏa thuận hòa, hoặc lặp lại nước đi quá số lần quy định (luật bất biến).</p>
+        </div>
+
+        <a href="index.html" class="btn-back">Quay Lại Trang Chủ</a>
+    </div>
+
+    <footer>
+        <p>Website Cờ Tướng &copy; 2024</p>
+    </footer>
+
+</body>
+</html>

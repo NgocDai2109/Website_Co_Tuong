@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cờ Vua Master - Đỉnh Cao Chiến Thuật</title>
+    <style>
+        /* --- Phần CSS trang trí --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Thanh điều hướng (Menu) */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header h1 {
+            float: left;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 5px;
+        }
+
+        header nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        header nav li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            color: #f1c40f;
+        }
+
+        /* Phần Hero (Ảnh bìa chính) */
+        #showcase {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1529699211952-734e80c4d42b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80');
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #showcase h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        #showcase p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Nút bấm */
+        .btn {
+            display: inline-block;
+            background: #f1c40f;
+            color: #333;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #d4ac0d;
+        }
+
+        /* Phần tính năng */
+        #features {
+            padding: 50px 0;
+            background: #fff;
+            text-align: center;
+        }
+
+        .feature-box {
+            width: 30%;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .feature-box h3 {
+            color: #2c3e50;
+        }
+
+        /* Phần luật chơi sơ lược */
+        #rules {
+            padding: 50px 0;
+            background-color: #e9ecef;
+            text-align: center;
+        }
+
+        /* Chân trang */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 0;
+        }
+
+        /* Responsive cho điện thoại */
+        @media(max-width: 768px) {
+            header h1, header nav {
+                float: none;
+                text-align: center;
+            }
+            .feature-box {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>ChessMaster</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Luật chơi</a></li>
+                    <li><a href="#">Xếp hạng</a></li>
+                    <li><a href="#">Đăng nhập</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Rèn Luyện Tư Duy Chiến Thuật</h1>
+            <p>Tham gia cùng hàng triệu kỳ thủ trên toàn thế giới. Thách đấu máy tính hoặc đấu online ngay hôm nay.</p>
+            <a href="play_vs_bot.html" class="btn">Chơi Ngay</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="feature-box">
+                <h3>👑 Đấu Trí Đỉnh Cao</h3>
+                <p>Thử thách bản thân với các cấp độ AI từ dễ đến khó, hoặc thi đấu xếp hạng với người chơi thực.</p>
+            </div>
+            <div class="feature-box">
+                <h3>🎓 Học Tập & Phân Tích</h3>
+                <p>Công cụ phân tích ván đấu giúp bạn nhận ra sai lầm và cải thiện kỹ năng qua từng nước đi.</p>
+            </div>
+            <div class="feature-box">
+                <h3>🌍 Cộng Đồng Lớn Mạnh</h3>
+                <p>Kết nối, kết bạn và tham gia các giải đấu trực tuyến được tổ chức hàng tuần.</p>
+            </div>
+            <div style="clear: both;"></div> </div>
+    </section>
+
+    <section id="rules">
+        <div class="container">
+            <h2>Tại sao nên chơi Cờ Vua?</h2>
+            <p style="max-width: 700px; margin: auto;">
+                Cờ vua không chỉ là một trò chơi giải trí, đó là môn thể thao trí tuệ giúp rèn luyện khả năng tập trung, 
+                tư duy logic và kỹ năng giải quyết vấn đề. Dù bạn là người mới bắt đầu hay kiện tướng, 
+                chúng tôi luôn có sân chơi phù hợp cho bạn.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Cờ Vua Master &copy; 2024. Thiết kế bởi Bạn.</p>
+    </footer>
+
+</body>
+</html>
